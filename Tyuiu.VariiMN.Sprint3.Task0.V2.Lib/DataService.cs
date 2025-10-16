@@ -6,12 +6,11 @@ namespace Tyuiu.VariiMN.Sprint3.Task0.V2.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double MultiplySeries = 0;
+            double MultiplySeries = 1;
             int i;
             for (i  = startValue; i <= stopValue; i++)
             {
-                double k = (i / Math.Pow(Math.Sin(1), -7));
-                MultiplySeries = MultiplySeries + Math.Pow(k, -2);
+                MultiplySeries *= Math.Pow(i / Math.Pow(Math.Sin(1), -7), -2);
             }
             return Math.Round(MultiplySeries, 3);
         }
