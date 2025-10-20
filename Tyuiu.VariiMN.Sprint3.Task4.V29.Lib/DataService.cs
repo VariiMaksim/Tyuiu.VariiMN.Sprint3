@@ -7,16 +7,15 @@ namespace Tyuiu.VariiMN.Sprint3.Task4.V29.Lib
         public double Calculate(int startValue, int stopValue)
         {
             double res = 0;
-            for (int x = stopValue; x <= stopValue; x++)
+            for (int x = startValue; x <= stopValue; x++)
             {
                 if (x == 0)
                 {
-                    break;
+                    continue;
                 }
                 else
                 {
-                    res = res + (Math.Cos(x) / x);
-
+                    res += (Math.Cos(x) / x);
                 }
             }
             return Math.Round(res, 3);
