@@ -25,9 +25,9 @@ namespace Tyuiu.VariiMN.Sprint3.Task7.V30.Test
             valueWaitArray[4] = -2.16;
             valueWaitArray[5] = 3.25;
             valueWaitArray[6] = 6.64;
-            valueWaitArray[7] = 10.30;
+            valueWaitArray[7] = 10.3;
             valueWaitArray[8] = 16.17;
-            valueWaitArray[9] = 28.10;
+            valueWaitArray[9] = 28.1;
             valueWaitArray[10] = 38.41;
 
             double[] res;

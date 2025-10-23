@@ -13,12 +13,15 @@ namespace Tyuiu.VariiMN.Sprint3.Task7.V30.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round((5 * x + 2.5 / Math.Sin(x) + 2) + 2 * x + 2, 2);
-                valueArray[count] = y;
-                count++;
                 if(Math.Sin(x) + 2 == 0)
                 {
                     y = 0;
+                }
+                else
+                {
+                    y = Math.Round(((5 * x + 2.5) / (Math.Sin(x) + 2)) + (2 * x + 2), 2);
+                    valueArray[count] = y;
+                    count++;
                 }
             }
             return valueArray;
